@@ -65,5 +65,11 @@ public class Ellipse  extends Shape{
         return perimeter;
     }
 
-
+    @Override
+    public String toString() {
+        return "Ellipse{" +
+                "axesA=" + axesA +
+                ", axesB=" + axesB +
+                '}';
+    }
 }
