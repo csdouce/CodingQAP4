@@ -8,18 +8,45 @@ abstract class Shape {
     // Common Instance Variables
     private String color;
     private boolean isFilled;
+    private String name;
 
     // Constructors
     public Shape(){
         this.color = "purple";
         this.isFilled = true;
+        this.name = "Shape";
     }
 
-    public Shape(String color, boolean isFilled){
+    public Shape(String color, boolean isFilled, String name){
         this.color = color;
         this.isFilled = isFilled;
+        this.name = name;
     }
 
+    // Getters and Setters
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean isFilled() {
+        return isFilled;
+    }
+
+    public void setFilled(boolean filled) {
+        isFilled = filled;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     // Common Methods
     abstract double getArea();
