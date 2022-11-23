@@ -67,9 +67,6 @@ public class Ellipse  extends Shape{
 
     @Override
     public String toString() {
-        return "Ellipse{" +
-                "axesA=" + axesA +
-                ", axesB=" + axesB +
-                '}';
+        return super.toString() + " area: " + this.getArea() + " perimeter: " + this.getPerimeter();
     }
 }
