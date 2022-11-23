@@ -42,6 +42,6 @@ public class Circle extends Shape{
 
     @Override
     public String toString() {
-        return super.toString() + " area: " + this.getArea() + " perimeter: " + getPerimeter();
+        return super.toString() + ", Area: " + this.getArea() + ", Perimeter: " + getPerimeter() + ", (Radius: " + this.radius + ")";
     }
 }

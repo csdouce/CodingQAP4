@@ -83,6 +83,6 @@ public class Triangle extends Shape {
 
     @Override
     public String toString() {
-        return super.toString() + " area: " + this.getArea() + " perimeter: " + this.getPerimeter();
+        return super.toString() + ", Area: " + this.getArea() + ", Perimeter: " + this.getPerimeter() + ", (Side 1: " + this.side1 + ", Side 2: " + this.side2 + ", Side 3: " + this.side3 + ")";
     }
 }
