@@ -1,10 +1,10 @@
-package com.keyin.qap4.problem1;
+package com.keyin.qap4.problem2;
 
 // Advanced Programming Java - QAP 4
 // Developer: Chris Doucette
 // Date Created: Tuesday, November 22, 2022
 
-abstract class Shape {
+abstract class Shape implements Scalable{
     // Common Instance Variables
     private String color;
     private boolean isFilled;
@@ -53,7 +53,7 @@ abstract class Shape {
     abstract double getPerimeter();
 
     public String toString() {
-        return "Name: " + this.name + " color: " + this.color + " is filled: " + this.isFilled;
+        return "Name: " + this.name + ", Color: " + this.color + ", isFilled: " + this.isFilled;
 
     }
 }

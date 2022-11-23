@@ -1,10 +1,10 @@
-package com.keyin.qap4.problem1;
+package com.keyin.qap4.problem2;
 
 // Advanced Programming Java - QAP 4
 // Developer: Chris Doucette
 // Date Created: Tuesday, November 22, 2022
 
-public class Ellipse  extends Shape{
+public class Ellipse  extends Shape {
     // Instance Variables
     private double axesA;
     private double axesB;
@@ -45,6 +45,7 @@ public class Ellipse  extends Shape{
         this.axesB = axesB;
     }
 
+    // Custom Methods
     @Override
     public double getArea(){
         // Area = PIE * a * b
@@ -65,6 +66,10 @@ public class Ellipse  extends Shape{
         return perimeter;
     }
 
+    public void scale(double scale){
+        this.setAxesA(this.getAxesA() * scale);
+        this.setAxesB(this.getAxesB() * scale);
+    }
     @Override
     public String toString() {
         return super.toString() + ", Area: " + this.getArea() + ", Perimeter: " + this.getPerimeter() + ", (Axes A: " + this.axesA + ", Axes B: " + this.axesB + ")";

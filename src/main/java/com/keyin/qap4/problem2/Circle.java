@@ -1,10 +1,10 @@
-package com.keyin.qap4.problem1;
+package com.keyin.qap4.problem2;
 
 // Advanced Programming Java - QAP 4
 // Developer: Chris Doucette
 // Date Created: Tuesday, November 22, 2022
 
-public class Circle extends Shape{
+public class Circle extends Shape {
 
     // Instance variables
     private double radius;
@@ -38,6 +38,10 @@ public class Circle extends Shape{
     @Override
     public double getPerimeter(){
         return 2 * Math.PI * this.radius;
+    }
+
+    public void scale(double scale){
+        this.setRadius(this.getRadius() * scale);
     }
 
     @Override
