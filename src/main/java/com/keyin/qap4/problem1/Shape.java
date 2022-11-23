@@ -53,7 +53,7 @@ abstract class Shape {
     abstract double getPerimeter();
 
     public String toString() {
-        return "Name: " + this.name + " color: " + this.color + " is filled: " + this.isFilled;
+        return "Name: " + this.name + ", Color: " + this.color + ", isFilled: " + this.isFilled;
 
     }
 }
